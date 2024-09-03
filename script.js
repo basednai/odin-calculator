@@ -53,12 +53,7 @@ operationBtns.forEach((btn) => {
 
 const clear = document.querySelector("#clear")
 clear.addEventListener("click", () => {
-    expression = {
-        ["term1"]: "",
-        ["term2"]: "",
-        ["operator"]: "",
-        ["equals"]: "",
-    }
+    clearExpression()
     display.textContent = ""
     opClick = 0;
     console.log("cleared");
@@ -127,6 +122,19 @@ const multiply = function (arr) {
 const divide = function (arr) {
 
     const product = arr.reduce((product, value) => product / value)
-    return arr[1] == 0 ? 1 : product;
+    if (arr[1] == 0) {
+        clearExpression();
+        return "Error!"
+    }
+    else product;
 };
+
+function clearExpression() {
+    expression = {
+        ["term1"]: "",
+        ["term2"]: "",
+        ["operator"]: "",
+        ["equals"]: "",
+    }
+}
 
