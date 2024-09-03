@@ -1,0 +1,38 @@
+#input {
+    /* border: 2px solid black; */
+    max-width: 200px;
+    min-height: 20px;
+    min-width: 200px;
+}
+
+#operations {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+}
+
+#numbers {
+    display: flex;
+    max-width: 200px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#calc {
+    /* display: flex; */
+    max-width: 200px;
+    /* border: 1px solid black */
+}
+
+div {
+    border: 1px solid black
+}
+
+#buttons {
+    display: flex;
+}
+
+.button  {
+    flex: 0 0 33.3333%;
+}
