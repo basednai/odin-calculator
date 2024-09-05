@@ -126,7 +126,7 @@ const divide = function (arr) {
         clearExpression();
         return "Error!"
     }
-    else product;
+    return product;
 };
 
 function clearExpression() {
